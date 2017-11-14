@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { RouterModule } from "@angular/router";
+import { formsRouter } from './app.routes';
 
 
 import { AppComponent } from './app.component';
@@ -21,7 +23,8 @@ import { ChineseMobileValidator } from './register/directives/mobile-validator.d
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule.forRoot(formsRouter)
   ],
   providers: [],
   bootstrap: [AppComponent]

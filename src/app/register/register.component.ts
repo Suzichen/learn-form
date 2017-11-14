@@ -150,7 +150,8 @@ export class RegisterComponent implements OnInit {
     }
 
     doRegister() {
-        alert('你通过了表单校验')
+        console.log(this.userForm.value);
+        alert('你通过了表单校验');
     }
 
 }

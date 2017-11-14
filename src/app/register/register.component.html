@@ -1,7 +1,7 @@
 <div class="user-register-container">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title"></h3>
+                <h3 class="panel-title">用户登录</h3>
             </div>
             <div class="panel-body">
                 <form [formGroup]="userForm" (ngSubmit)="doRegister()" class="form-horizontal" role="form" novalidate>
@@ -81,7 +81,7 @@
                         </div>
                         <div class="col-sm-3">
                             <img id="vCodeImg" src="http://59.111.99.234/captcha" alt="验证码">
-                            <button class="btn btn-primary" id="reloadVCode">重新获取</button>
+                            <a class="btn btn-primary" id="reloadVCode">重新获取</a>
                         </div>
                     </div>
                     <!-- 提交前验证失败的信息 -->
