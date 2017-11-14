@@ -35,7 +35,8 @@ export class RegisterComponent implements OnInit {
             minlength: '昵称4到32个字符。'
         },
         telephone: {
-            required: '请输入手机号'
+            required: '请输入手机号。',
+            ChineseMobileValidator: '请输入合法的手机号码。'
         },
         email: {
             required: '请输入邮箱。',

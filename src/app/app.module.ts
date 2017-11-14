@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { EqualValidator } from "./register/directives/equal-validator.directive";
+import { ChineseMobileValidator } from './register/directives/mobile-validator.directive';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { EqualValidator } from "./register/directives/equal-validator.directive"
     AppComponent,
     RegisterComponent,
     LoginComponent,
-    EqualValidator
+    EqualValidator,
+    ChineseMobileValidator
   ],
   imports: [
     BrowserModule,
