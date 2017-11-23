@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { EqualValidator } from "./register/directives/equal-validator.directive";
 import { ChineseMobileValidator } from './register/directives/mobile-validator.directive';
 import { UserDataComponent } from './user-data/user-data.component';
+import { DynamicFormComponent } from './user-data/dynamic-form/dynamic-form.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { UserDataComponent } from './user-data/user-data.component';
     LoginComponent,
     EqualValidator,
     ChineseMobileValidator,
-    UserDataComponent
+    UserDataComponent,
+    DynamicFormComponent
   ],
   imports: [
     BrowserModule,
