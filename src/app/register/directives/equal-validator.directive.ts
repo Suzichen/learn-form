@@ -23,6 +23,7 @@ export class EqualValidator implements Validator {
         if (targetControl && selfValue !== targetControl.value ) {
             if(!this.reverse){
                 return {
+                    // validateEqual: {description: '两次输入的密码不一致。'}
                     validateEqual: false
                 }
             }else{
