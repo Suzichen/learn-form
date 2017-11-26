@@ -10,11 +10,11 @@ import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 })
 export class RegisterComponent implements OnInit {
 
-    private userForm:FormGroup;
+    public userForm:FormGroup;
     private userInfo:User = new User();
 
     // 错误信息列表缓存
-    private formErrorsList = {
+    public formErrorsList = {
         userName: '',
         nickName: '',
         email: '',

@@ -10,7 +10,7 @@ import { Base, Image, Textarea, TextBox } from './dynamic-form/forms';
 })
 export class UserDataComponent implements OnInit {
 
-    private fields: Base<any>[] = [
+    public fields: Base<any>[] = [
         new Image({
             key: "logo",
             src: 'https://angular.io/assets/images/logos/angular/logo-nav@2x.png'
