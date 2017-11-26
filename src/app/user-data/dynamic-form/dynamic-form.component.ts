@@ -1,16 +1,23 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+import { Base } from '../dynamic-form/forms';
 
 @Component({
-  selector: 'form-dynamic-form',
-  templateUrl: './dynamic-form.component.html',
-  styleUrls: ['./dynamic-form.component.css'],
-  encapsulation: ViewEncapsulation.None
+    selector: 'form-dynamic-form',
+    templateUrl: './dynamic-form.component.html',
+    styleUrls: ['./dynamic-form.component.css'],
+    encapsulation: ViewEncapsulation.None
 })
 export class DynamicFormComponent implements OnInit {
 
-  constructor() { }
+    @Input()
+    form: FormGroup;
+    @Input()
+    field: Base<any>
 
-  ngOnInit() {
-  }
+    constructor() { }
+
+    ngOnInit() {
+    }
 
 }

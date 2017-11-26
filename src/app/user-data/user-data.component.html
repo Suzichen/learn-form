@@ -1,3 +1,20 @@
-<p>
-  user-data works!
-</p>
+<div class="user-profile-container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">修改个人资料</h3>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" role="form" [formGroup]="form" (ngSubmit)="doChangeInfo()">
+                <div *ngFor="let field of fields" class="form-group">
+                    <!-- 动态创建每个输入框组件 -->
+                    <form-dynamic-form [form]="form" [field]="field"></form-dynamic-form>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button class="btn btn-success">保存</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
