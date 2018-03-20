@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { formsRouter } from './app.routes';
-
+import { HashLocationStrategy, LocationStrategy } from "@angular/common";
 
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
@@ -30,7 +30,12 @@ import { DynamicFormComponent } from './user-data/dynamic-form/dynamic-form.comp
     ReactiveFormsModule,
     RouterModule.forRoot(formsRouter)
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LocationStrategy,
+      useClass: HashLocationStrategy
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
